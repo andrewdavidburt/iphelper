@@ -106,7 +106,7 @@ func callout(ip string) ([]byte, error) {
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		fmt.Print(err.Error())
+		return nil, err
 	}
 
 	return body, nil
