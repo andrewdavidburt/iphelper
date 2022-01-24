@@ -163,13 +163,6 @@ func serverError(err error) (events.APIGatewayProxyResponse, error) {
 	}, nil
 }
 
-// func clientError(status int) (events.APIGatewayProxyResponse, error) {
-// 	return events.APIGatewayProxyResponse{
-// 		StatusCode: status,
-// 		Body:       http.StatusText(status),
-// 	}, nil
-// }
-
 func main() {
 	lambda.Start(manager)
 }
