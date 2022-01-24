@@ -6,8 +6,10 @@
 
 ###  Andrew Burt
 
-Command to run in the cloud:
+Command to run in the cloud from bash:
 `curl https://ia3xx10f46.execute-api.us-west-2.amazonaws.com/staging/iphelper?ip=1.1.1.1`
+or just open the URI:
+`https://ia3xx10f46.execute-api.us-west-2.amazonaws.com/staging/iphelper?ip=1.1.1.1`
 (replace `ip=` with whatever IP you like)
 
 All tests run, though one test requires a private API key to be exported to the environment before it will return successfully (tests the 3rd-party API lookup).
